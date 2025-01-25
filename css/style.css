@@ -1,0 +1,399 @@
+/* Définir les polices utilisées : /*
+
+/* Déclaration de la police Gilroy */
+@font-face {
+  font-family: 'Gilroy';
+  src: url('fonts/gilroy/Gilroy-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('fonts/gilroy/Gilroy-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Déclaration de la police Arima Koshi */
+@font-face {
+  font-family: 'Arima Koshi';
+  src: url('fonts/arima-koshi/ArimaKoshi-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arima Koshi';
+  src: url('fonts/arima-koshi/ArimaMadurai-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+  
+/* Général */
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Arima Koshi', sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 900;
+  font-size: 4rem;
+  position: relative;
+  top: 22%;
+  z-index: 2;
+} 
+
+h2 {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 900;
+}
+
+#cocktails, #galerie {
+  background-color: #410F12;
+}
+
+/* Version mobile */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+}
+
+/* Bouton */
+.bouton {
+  background-color: #891647;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 500;
+  border-radius: 10px;
+  box-shadow: 5px 5px 22px 0px rgba(0,0,0,0.74);
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+.bouton:hover {
+  background-color: #891647;
+  opacity: 0.5;
+}
+.bouton:active {
+  background-color: #E90514;
+  box-shadow: inset 2px 2px 20px 0px rgba(0,0,0,0.64);
+}
+
+/* Fin de bouton */
+
+/* NavBar */
+#logo {
+  height: 60px; 
+  width: auto;
+  margin: 2% 200px;
+}
+
+nav {
+    background-color: #410F12;
+    height: 70px;
+}
+
+.container-fluid {
+    padding: 0 20px; /* Éloigne le contenu des bords gauche et droit */
+}
+
+.nav-link {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 4rem;
+}
+
+.navbar-collapse {
+  background-color: #410F12;
+  text-align: center;
+  padding: none;
+}
+
+/* Supprimer les bordures et l'arrière-plan du bouton burger */
+.navbar-toggler {
+  border: none;
+  background: none;
+  padding: 0;
+  }
+
+/* Couleur et style de l'icône Font Awesome */
+.navbar-toggler .fa-bars {
+  color: white;      /* Couleur de l'icône */
+  font-size: 35px;   /* Taille de l'icône */
+  margin-right: 20px; /* Pour laisser une marge à droite et pas coller l'icône au bord de la page */
+}
+
+/* Supprimer l'effet de contour au clic */
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+ul {
+  margin-right: 30px;
+}
+
+li {
+    font-family: 'Arima Koshi', sans-serif;
+  }
+
+/* Version mobile */
+@media (max-width: 768px) {
+  #logo {
+    height: 40px; 
+    width: auto;
+    margin: 0%;
+    padding-left: 30%;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  nav .container-fluid {
+    padding: 0;
+    align-items: center;
+  }
+
+  .nav-link {
+    margin: 0;
+    padding: 30px;
+  }
+}
+
+/* Fin de la NavBar */
+
+/* Hero */
+.hero-img {
+  background-image: url(../Images/Bar/Bar.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  height: 45vh;
+}
+
+.position-image {
+  width: 20%;
+  max-width: 300px; /* Taille maximale pour éviter qu'elle devienne trop grande */
+  height: auto; /* Maintenir les proportions */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 52%;
+  background-color: rgba(0, 0, 0, 0.5); /* Noir semi-transparent */
+  z-index: 1; /* Derrière le texte */
+}
+
+/* Version mobile */
+@media (max-width: 768px) {
+  .position-image {
+    width: 50%; /* Augmente la taille pour les écrans mobiles */
+    max-width: none; /* Supprime la limite si nécessaire */
+  }
+  .navbar-toggler .fa-bars {
+    color: white;      /* Couleur de l'icône */
+    font-size: 30px;   /* Taille de l'icône */
+    margin-right: 20px;
+  }
+  
+}
+
+/* Section Évènement */
+.card {
+  border-radius: 0;
+  background-color: #AA5555;
+}
+
+.card-body i {
+  color: white;
+  font-size: 75px;
+}
+
+.theme {
+  color: white;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 500;
+  font-size: 30px; 
+  margin-bottom: 5px;
+}
+
+.date {
+  color: white;
+  font-family: 'Arima Koshi', sans-serif;
+  font-size: 300;
+  font-size: 20px;
+}
+
+/* Version mobile */
+@media (max-width: 768px) {
+  .card-body i {
+    font-size: 40px;
+  }
+  .theme {
+    font-size: 20px;
+  }
+  .date {
+    font-size: 15px;
+  }
+}
+
+/* Section galerie*/
+/* Carousel */
+.slider {
+  position: relative;
+  z-index: 200;
+  padding: 0 0px;
+  margin: 5rem auto;
+  max-width: 800px;
+  width: 100%;* {
+    box-sizing: border-box;
+  }
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 50px;
+  line-height: 50px;
+  margin-top: -25px;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-family: monospace;
+  font-size: 5rem;
+  z-index: 300;
+  outline: none;
+}
+
+.slick-prev {
+  left: -50px;
+  text-align: left;
+  opacity: 0.5;
+  margin-left: 160px;
+}
+
+.slick-next {
+  right: -50px;
+  text-align: right;
+  opacity: 0.5;
+  margin-right: 170px;
+}
+
+.item.slick-slide {
+  width: 400px;
+  height: 400px !important;
+  transition: transform .4s;
+  position: relative; 
+}
+
+.slick-slide:after {
+  content:'';
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.5);
+  transition: transform .4s;
+}
+
+.item.slick-slide {
+  transform: scale(0.7)  translate(640px);
+}
+
+.item.slick-slide.slick-center + .slick-slide {
+  transform: scale(0.8) translate(-250px);
+  z-index: 10;
+}
+
+.item.slick-slide.slick-center + .slick-slide + .item.slick-slide {
+  transform: scale(0.7)  translate(-640px);
+  z-index: 5;
+}
+
+.item.slick-slide.slick-active {
+  transform: scale(0.8) translate(250px);
+}
+
+.item.slick-slide.slick-center {
+  /* margin: 0 -10%; */
+  transform: scale(1);
+  z-index: 30;
+}
+
+.slick-center:after {
+  opacity: 0;
+}
+
+#modalId {
+  z-index: 100;
+} 
+
+.jquery-modal {
+  z-index: 900;
+}
+
+/* Version mobile */
+@media (max-width: 768px) {
+  .slick-prev {
+    margin-left: 30px;
+  }
+  
+  .slick-next {
+    margin-right: 45px;
+  }
+}
+
+/* Fin du carousel */
+
+/* Footer*/
+footer i {
+  font-size: 30px;
+  margin-right: 20px;
+  color: white;
+}
+
+footer a:not(.rs) {
+  color: white;
+  margin: 30px;
+}
+
+.logo-footer {
+  width: 350px;
+  height: 150px;
+}
+
+/* Version mobile */
+@media (max-width: 768px) {
+  footer .list-plan-site {
+    flex-direction: column; /* Passe en mode vertical */
+    align-items: center; /* Centre chaque élément */
+  }
+
+  footer .list-plan-site li {
+    margin: 10px 0; /* Ajoute un espacement vertical */
+  }
+
+  .mentions-legales {
+    font-size: 10px;
+  }
+}
+
+
+

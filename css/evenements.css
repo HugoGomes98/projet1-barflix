@@ -1,0 +1,307 @@
+/* Définir les polices utilisées : /*
+
+/* Déclaration de la police Gilroy */
+@font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/gilroy/Gilroy-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/gilroy/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  /* Déclaration de la police Arima Koshi */
+  @font-face {
+    font-family: 'Arima Koshi';
+    src: url('fonts/arima-koshi/ArimaKoshi-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Arima Koshi';
+    src: url('fonts/arima-koshi/ArimaMadurai-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+
+  /* Général */
+  body {
+      background-color: black;
+      color: white;
+      font-family: 'Arima Koshi', sans-serif;
+      font-weight: 300;
+  }
+  
+  h1 {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 900;
+  } 
+
+  h2 {
+      font-family: 'Gilroy', sans-serif;
+      font-weight: 900;
+  }
+  
+  #cocktails, #galerie {
+    background-color: #410F12;
+  }
+  
+  /* Version mobile */
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+  
+    h2 {
+      font-size: 25px;
+    }
+  }
+
+/* NavBar */
+#logo {
+  height: 60px; 
+  width: auto;
+  margin: 2% 200px;
+}
+
+nav {
+    background-color: #410F12;
+    height: 70px;
+}
+
+.container-fluid {
+    padding: 0 20px; /* Éloigne le contenu des bords gauche et droit */
+}
+
+.nav-link {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 4rem;
+}
+
+.navbar-collapse {
+  background-color: #410F12;
+  text-align: center;
+  padding: none;
+}
+
+/* Supprimer les bordures et l'arrière-plan du bouton burger */
+.navbar-toggler {
+  border: none;
+  background: none;
+  padding: 0;
+  }
+
+/* Couleur et style de l'icône Font Awesome */
+.navbar-toggler .fa-bars {
+  color: white;      /* Couleur de l'icône */
+  font-size: 35px;   /* Taille de l'icône */
+  margin-right: 20px; /* Pour laisser une marge à droite et pas coller l'icône au bord de la page */
+}
+
+/* Supprimer l'effet de contour au clic */
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+ul {
+  margin-right: 30px;
+}
+
+li {
+    font-family: 'Arima Koshi', sans-serif;
+  }
+  
+  /* Version mobile */
+  @media (max-width: 768px) {
+    #logo {
+      height: 40px; 
+      width: auto;
+      margin: 0%;
+      padding-left: 30%;
+    }
+  
+    h2 {
+      font-size: 25px;
+    }
+  
+    nav .container-fluid {
+      padding: 0;
+      align-items: center;
+    }
+  
+    .nav-link {
+      margin: 0;
+      padding: 30px;
+    }
+  }
+  
+  /* Fin de la NavBar */
+
+/* Hero */
+.hero-img {
+  background-image: url(../Images/Bar/Bar.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  height: 45vh;
+}
+
+.position-image {
+  width: 20%;
+  max-width: 300px; /* Taille maximale pour éviter qu'elle devienne trop grande */
+  height: auto; /* Maintenir les proportions */
+}
+
+/* Version mobile */
+@media (max-width: 768px) {
+  .position-image {
+    width: 50%; /* Augmente la taille pour les écrans mobiles */
+    max-width: none; /* Supprime la limite si nécessaire */
+  }
+  .navbar-toggler .fa-bars {
+    color: white;      /* Couleur de l'icône */
+    font-size: 30px;   /* Taille de l'icône */
+    margin-right: 20px;
+  }
+  
+}
+
+  /* Cartes évènements */
+  .stEventCard {
+    border-radius: 0;
+    background-color: #AA5555;
+  }
+  
+  .eipEventCard {
+    border-radius: 0;
+    background-color: #ECCBA6;
+  }
+
+  .cdpEventCard {
+    border-radius: 0;
+    background-color: #BE2222;
+  }
+
+  .card-body i {
+    color: black;
+    font-size: 75px;
+  }
+  
+  .theme {
+    color: black;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 900;
+    font-size: 30px; 
+    margin-bottom: 5px;
+  }
+  
+  .date {
+    color: black;
+    font-family: 'Arima Koshi', sans-serif;
+    font-size: 300;
+    font-size: 20px;
+  }
+
+  .contenu {
+    color: black;
+    font-family: 'Arima Koshi', sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+  }
+
+  .promo {
+    color: black;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 900;
+    font-size: 15px; 
+  }
+
+  .img-carte {
+    background-image: url('../Images/Sections/Affiche-st.jpg');
+    background-size: cover;
+  }
+
+  .img-carte2 {
+    background-image: url('../Images/Sections/Affiche-eip.jpg');
+    background-size: cover;
+  }
+
+  .img-carte3 {
+    background-image: url('../Images/Sections/Affiche-cdp.jpg');
+    background-size: cover;
+  }
+
+  /* Version mobile */
+  @media (max-width: 768px) {
+    .card-body i {
+      font-size: 30px;
+    }
+    .theme, .contenu {
+      font-size: 15px;
+    }
+    .date, .promo{
+      font-size: 10px;
+    }
+    .contenu, .date {
+      padding: 0 10px;
+    }
+    .card-body {
+      padding: 0;
+    }
+    .img-carte {
+      background-position: center center; 
+      background-repeat: no-repeat; 
+    }
+    .img-carte2 {
+      background-position: center center; 
+      background-repeat: no-repeat; 
+    }
+    .img-carte3 {
+      background-position: center center; 
+      background-repeat: no-repeat; 
+    }
+  }
+  
+
+/* Footer*/
+footer i {
+  font-size: 30px;
+  margin-right: 20px;
+  color: white;
+}
+
+footer a:not(.rs) {
+  color: white;
+  margin: 30px;
+}
+
+.logo-footer {
+  width: 350px;
+  height: 150px;
+}
+
+/* Version mobile */
+@media (max-width: 768px) {
+  footer .list-plan-site {
+    flex-direction: column; /* Passe en mode vertical */
+    align-items: center; /* Centre chaque élément */
+  }
+
+  footer .list-plan-site li {
+    margin: 10px 0; /* Ajoute un espacement vertical */
+  }
+
+  .mentions-legales {
+    font-size: 10px;
+  }
+}
+  
